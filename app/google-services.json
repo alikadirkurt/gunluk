@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1010761307874",
+    "firebase_url": "https://gunlugum-373a3.firebaseio.com",
+    "project_id": "gunlugum-373a3",
+    "storage_bucket": "gunlugum-373a3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1010761307874:android:b501d1d0432df3ab",
+        "android_client_info": {
+          "package_name": "com.example.kadir.gunlugum"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1010761307874-42r9ntehat5sf0ubb9fgt7ing4con14r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kadir.gunlugum",
+            "certificate_hash": "c81f754715f86f8b065674ac20e138f1f0e82e6e"
+          }
+        },
+        {
+          "client_id": "1010761307874-ga538btoulpd5hfnjv0vah233bf3tonq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGYGIVxYEx0sUJjs96K6yiGWij6a7FZfs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1010761307874-ga538btoulpd5hfnjv0vah233bf3tonq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
