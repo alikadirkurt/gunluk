@@ -115,7 +115,8 @@
         android:layout_marginBottom="120dp"
         android:background="@drawable/button_regtangle_pink"
         android:text="Register"
-        android:textColor="#ffffff" />
+        android:textColor="#ffffff"
+        android:onClick="register"/>
 
 
 </RelativeLayout>
