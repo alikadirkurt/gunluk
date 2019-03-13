@@ -17,10 +17,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".register_activity" />
-        <activity android:name=".gunluklerim"
-            android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
-
-        </activity>
+        <activity
+            android:name=".gunluklerim"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"></activity>
+        <activity android:name=".upload_activity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"></activity>
     </application>
 
 </manifest>
