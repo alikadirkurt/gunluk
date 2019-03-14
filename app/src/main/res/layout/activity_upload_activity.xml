@@ -1,38 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".upload_activity">
 
-    <ImageView
-        android:id="@+id/taptoimage"
-        android:layout_width="324dp"
-        android:layout_height="198dp"
-        android:layout_marginTop="16dp"
-        android:onClick="topimage"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.555"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/tikla" />
+
+
+            <ImageView
+                android:id="@+id/taptoimage"
+                android:layout_width="324dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="16dp"
+                android:onClick="topimage"
+               android:layout_centerHorizontal="true"
+                app:srcCompat="@drawable/tikla" />
 
     <TextView
         android:id="@+id/select_date"
+        android:layout_below="@+id/taptoimage"
         android:layout_width="172dp"
         android:layout_height="31dp"
-        android:layout_marginStart="3dp"
-        android:layout_marginLeft="3dp"
-        android:layout_marginTop="24dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
         android:drawableRight="@drawable/icon_tarih"
         android:text="Select Date"
         android:textAlignment="center"
         android:textColorHint="#000000"
         android:textSize="25sp"
+        android:layout_centerHorizontal="true"
 
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/taptoimage" />
+        />
 
-</android.support.constraint.ConstraintLayout>
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/select_date"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTextView"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:hint="Yazmaya Basla" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
