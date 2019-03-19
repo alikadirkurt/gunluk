@@ -14,6 +14,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.auth.UserProfileChangeRequest;
 
 public class register_activity extends AppCompatActivity {
     private FirebaseAuth mAuth;
@@ -52,6 +53,7 @@ public class register_activity extends AppCompatActivity {
                     Toast.makeText(register_activity.this, "Kayıt Başarısız", Toast.LENGTH_SHORT).show();
                 }
             });}
+
         }
 }
 
