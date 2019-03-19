@@ -5,48 +5,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background1"
+    android:background="@android:color/background_light"
     tools:context=".Sign_up">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginStart="91dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="91dp"
-        android:layout_marginRight="91dp"
-        app:srcCompat="@drawable/clipboard" />
+
+
 
     <EditText
         android:id="@+id/sign_in_email_editText"
         android:layout_width="300dp"
         android:hint="E-mail"
-        android:drawableLeft="@drawable/ic_action_name"
+        android:drawableLeft="@drawable/icon_person1"
         android:textColorHint="#ffffff"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="260dp"
-        android:textColor="#ffffff"
+        android:textColor="#000000"
         android:ems="10"
         android:inputType="textEmailAddress" />
 
     <EditText
         android:id="@+id/sign_in_password_editText"
         android:layout_width="300dp"
-        android:drawableLeft="@drawable/icon_password"
+        android:drawableLeft="@drawable/icon_lock1"
         android:hint="Password"
         android:textColorHint="#ffffff"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="195dp"
-        android:textColor="#ffffff"
+        android:textColor="#000000"
         android:ems="10"
         android:inputType="textPassword" />
 
@@ -72,6 +61,18 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="30dp"
         android:textSize="15sp"
-        android:textColor="#ffffff"
+        android:textColor="#000000"
         android:text="Register Me" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sign_in_email_editText"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="49dp"
+        android:layout_marginBottom="37dp"
+        app:srcCompat="@drawable/back3" />
+
 </RelativeLayout>

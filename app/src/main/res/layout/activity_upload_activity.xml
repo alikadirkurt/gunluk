@@ -5,34 +5,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".upload_activity">
+    tools:context=".upload_activity"
+    android:background="@android:color/background_light">
 
 
-
-            <ImageView
-                android:id="@+id/taptoimage"
-                android:layout_width="324dp"
-                android:layout_height="150dp"
-                android:layout_marginTop="16dp"
-                android:onClick="topimage"
-               android:layout_centerHorizontal="true"
-                app:srcCompat="@drawable/tikla" />
+    <ImageView
+        android:id="@+id/taptoimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:onClick="topimage"
+        app:srcCompat="@drawable/add_photo" />
 
     <TextView
         android:id="@+id/select_date"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/taptoimage"
-        android:layout_width="172dp"
-        android:layout_height="31dp"
+        android:layout_centerHorizontal="true"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
+        android:background="#ffffff"
         android:drawableRight="@drawable/icon_tarih"
         android:text="Select Date"
         android:textAlignment="center"
         android:textColorHint="#000000"
-        android:textSize="25sp"
-        android:layout_centerHorizontal="true"
-
-        />
+        android:textSize="15sp" />
 
     <ScrollView
         android:id="@+id/scrollView"
@@ -56,8 +55,16 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:layout_marginLeft="30dp"
-                android:layout_marginTop="15dp"
-                android:hint="Yazmaya Basla" />
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="15dp"
+                android:background="#ffffff"
+                android:hint="Yazmaya Basla"
+                android:paddingLeft="7dp"
+                android:paddingTop="7dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="7dp"
+                android:textSize="15sp"/>
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>
