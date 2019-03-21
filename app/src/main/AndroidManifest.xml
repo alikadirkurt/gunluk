@@ -23,6 +23,7 @@
             android:theme="@style/Theme.AppCompat.Light.DarkActionBar"></activity>
         <activity android:name=".upload_activity"
             android:theme="@style/Theme.AppCompat.Light.DarkActionBar"></activity>
+
     </application>
 
 </manifest>
