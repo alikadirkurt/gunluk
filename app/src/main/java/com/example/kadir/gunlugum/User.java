@@ -12,14 +12,20 @@ import java.util.ArrayList;
 
 public class User extends ArrayAdapter<String> {
    private final ArrayList<String> selected;
+   private final ArrayList<String> userComment;
+   private final ArrayList<String> userImage;
+   private final ArrayList<String> usermail;
    private final Activity context;
 
 
 
-    public User(ArrayList<String> selected, Activity context) {
+    public User(ArrayList<String> selected,ArrayList<String> userComment, ArrayList<String> userImage,ArrayList<String> usermail, Activity context) {
         super(context,R.layout.customview,selected);
         this.selected = selected;
         this.context = context;
+        this.userComment = userComment;
+        this.userImage = userImage;
+        this.usermail = usermail;
     }
 
     @NonNull

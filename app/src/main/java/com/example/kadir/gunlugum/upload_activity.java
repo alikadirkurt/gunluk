@@ -55,6 +55,8 @@ public class upload_activity extends AppCompatActivity {
     private StorageReference mStorageRef;
     private DatePickerDialog.OnDateSetListener mDateSetListener;
     Uri selectedImage;
+    FirebaseUser user;
+    String userID;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -93,9 +95,11 @@ public class upload_activity extends AppCompatActivity {
             date.setText(reeldate);
             }
         };
+        user = FirebaseAuth.getInstance().getCurrentUser();
+        userID = user.getUid();
 
     }
-
+    
     public void topimage(View view){
     if(ContextCompat.checkSelfPermission(upload_activity.this,Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED){
         ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.READ_EXTERNAL_STORAGE},1);
@@ -158,10 +162,10 @@ public class upload_activity extends AppCompatActivity {
                         String selecteddate = date.getText().toString();
                         UUID uuıd1 = UUID.randomUUID();
                         String uuidString = uuıd1.toString();
-                        myRef.child("Posts").child(uuidString).child("usermail").setValue(userEmail);
-                        myRef.child("Posts").child(uuidString).child("downloadUrl").setValue(downloadUrl);
-                        myRef.child("Posts").child(uuidString).child("userComment").setValue(userComment);
-                        myRef.child("Posts").child(uuidString).child("selecteddate").setValue(selecteddate);
+                        myRef.child("Posts").child(userID).child(uuidString).child("usermail").setValue(userEmail);
+                        myRef.child("Posts").child(userID).child(uuidString).child("downloadUrl").setValue(downloadUrl);
+                        myRef.child("Posts").child(userID).child(uuidString).child("userComment").setValue(userComment);
+                        myRef.child("Posts").child(userID).child(uuidString).child("selecteddate").setValue(selecteddate);
                         Toast.makeText(upload_activity.this, "Günlük Eklendi", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(getApplicationContext(),gunluklerim.class);
                         startActivity(intent);
@@ -178,4 +182,5 @@ public class upload_activity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+
 }
